@@ -37,7 +37,7 @@ if (!$storageFile) {
 Write-Output "downloading $fileshareFolder/$zipFile"
 Get-AzStorageBlobContent `
   -Container $container `
-  -Blog "$zipFile" `
+  -Blob "$zipFile" `
   -Destination "$localRestoreFolder/" `
   -Context $storageAccount.Context `
   -Force
